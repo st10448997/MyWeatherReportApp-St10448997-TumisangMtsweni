@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainScreen">
+
+    <ImageView
+        android:id="@+id/edit_daily_report"
+        android:layout_width="409dp"
+        android:layout_height="731dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.124"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.021"
+        app:srcCompat="@drawable/_52b84250ef52e5868f142f74b1d0de3" />
+
+    <TextView
+        android:id="@+id/tv_daily_report"
+        android:layout_width="298dp"
+        android:layout_height="56dp"
+        android:text="Daily Report"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.283"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <EditText
+        android:id="@+id/edit_monday"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Monday"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_daily_report" />
+
+    <EditText
+        android:id="@+id/edit_tuesday"
+        android:layout_width="239dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Tuesday"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.237" />
+
+    <EditText
+        android:id="@+id/edit_wednesday"
+        android:layout_width="240dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="96dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Wednesday"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_friday"
+        android:layout_width="246dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Friday"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_thursday" />
+
+    <EditText
+        android:id="@+id/edit_thursday"
+        android:layout_width="243dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Thursday"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_wednesday" />
+
+    <EditText
+        android:id="@+id/edit_sunday"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="544dp"
+        android:layout_marginEnd="88dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Sunday"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_saturday"
+        android:layout_width="253dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="404dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Saturday"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_daily_report" />
+
+    <Button
+        android:id="@+id/btn_detailed_view_screen"
+        android:layout_width="128dp"
+        android:layout_height="70dp"
+        android:text="View Detailed Screen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="114dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="148dp"
+        android:text="Clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_calculate"
+        android:layout_width="126dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="284dp"
+        android:layout_marginBottom="4dp"
+        android:text="averageTemparatureForTheWeek"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
